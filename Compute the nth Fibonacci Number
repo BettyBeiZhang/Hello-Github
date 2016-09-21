@@ -1,0 +1,12 @@
+//Write a function called fib that accepts a number n as a parameter and computes the nth fibonacci number using fibonacci rules. 
+//That is, fib(0) is 1, fib(1) is 1, fib(2) is 2, fib(3) is 3, fib(4) is fib(3)+fib(2).etc..
+
+//Solution :
+
+function fibonacci(num){
+	if(num === 0 || num === 1){
+		return 1; 
+	}
+
+	return fibonacci(num-1) + fibonacci(num-2); 
+}
